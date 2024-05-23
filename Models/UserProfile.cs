@@ -10,6 +10,7 @@ public class UserProfile
     public string Address { get; set; }
 
     public string IdentityUserId { get; set; }
+    public string UserName { get; set; }
 
     public IdentityUser IdentityUser { get; set; }
 

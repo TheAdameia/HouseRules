@@ -46,5 +46,24 @@ public class HouseRulesDbContext : IdentityDbContext<IdentityUser>
             LastName = "Strator",
             Address = "101 Main Street",
         });
+
+        modelBuilder.Entity<Chore>().HasData(new Chore[]
+        {
+            new Chore {Id = , Name = "", Difficulty = , ChoreFrequencyDays = },
+            new Chore {Id = , Name = "", Difficulty = , ChoreFrequencyDays = },
+            new Chore {Id = , Name = "", Difficulty = , ChoreFrequencyDays = },
+            new Chore {Id = , Name = "", Difficulty = , ChoreFrequencyDays = }
+        });
+
+        modelBuilder.Entity<ChoreAssignment>().HasData(new ChoreAssignment[]
+        {
+            new ChoreAssignment {Id = , UserProfileId = , ChoreId = },
+            new ChoreAssignment {Id = , UserProfileId = , ChoreId = }
+        });
+
+        modelBuilder.Entity<ChoreCompletion>().HasData(new ChoreCompletion[]
+        {
+            new ChoreCompletion {Id = , UserProfileId = , ChoreId = , CompletedOn = },
+        });
     }
 }
